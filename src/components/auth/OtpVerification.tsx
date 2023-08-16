@@ -25,7 +25,7 @@ const OtpVerification: React.FC = () => {
         recaptchaVerifier
       );
       setVerificationId(verificationId);
-      console.log("verificationId::", verificationId)
+    //   console.log("verificationId::", verificationId)
       console.log("sendOtp successful");
     } catch (error) {
       console.log("error:", error);
@@ -78,7 +78,7 @@ const OtpVerification: React.FC = () => {
         renderSeparator={<span>-</span>}
         renderInput={(props) => <input {...props} />}
       />
-      <button onClick={verifyOtp}>Verify OTP {verificationCode}</button>
+      <button onClick={verifyOtp}>Verify OTP </button>
     </div>
   );
 };
