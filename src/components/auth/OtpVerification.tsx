@@ -8,10 +8,9 @@ import PhoneInput from "react-phone-input-2";
 
 firebase.initializeApp(firebaseConfig);
 
-const OtpVerification: React.FC = () => {
-  const [otp, setOtp] = useState<string>("574315");
-    const [phoneNumber, setPhoneNumber] = useState("+639771794521");
-//   const [phoneNumber, setPhoneNumber] = useState("+971509608995");
+const OtpVerification: React.FC = () => { 
+  //   const [phoneNumber, setPhoneNumber] = useState("+639771794521");
+  const [phoneNumber, setPhoneNumber] = useState("+971509608995");
   const [verificationCode, setVerificationCode] = useState<string>("");
   const [verificationId, setVerificationId] = useState<string>("");
 
@@ -73,13 +72,13 @@ const OtpVerification: React.FC = () => {
 
       <br />
       <OtpInput
-        value={otp}
-        onChange={setOtp}
+        value={verificationCode}
+        onChange={setVerificationCode}
         numInputs={6}
         renderSeparator={<span>-</span>}
         renderInput={(props) => <input {...props} />}
       />
-      <button onClick={verifyOtp}>Verify OTP</button>
+      <button onClick={verifyOtp}>Verify OTP {verificationCode}</button>
     </div>
   );
 };
