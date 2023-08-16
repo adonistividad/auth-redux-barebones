@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Signup from "./components/Signup";
+import Signup from "./components/auth/Signup";
 import { selectToken, selectUser } from "./features/auth/authSlice";
-import Signin from "./components/Signin";
+import Signin from "./components/auth/Signin";
+import OtpVerification from "./components/auth/OtpVerification";
 const App: React.FC = () => {
   const token = useSelector(selectToken);
   const user = useSelector(selectUser);
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <div>
           <Signup />
           <Signin />
+          <OtpVerification />
         </div>
       )}
     </div>

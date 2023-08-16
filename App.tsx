@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Signup from "./components/Signup";
-import { selectToken, selectUser } from "./features/auth/authSlice";
+import { selectToken, selectUser } from "./src/features";
 import Signin from "./components/Signin";
 const App: React.FC = () => {
   const token = useSelector(selectToken);

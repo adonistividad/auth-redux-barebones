@@ -1,0 +1,10 @@
+yarn global add  @ionic/cli
+yarn add firebase @ionic/react @ionic/react-router react-router-dom @types/react-router-dom
+
+
+https://www.youtube.com/watch?v=Q--CGvbvY3k
+React js firebase phone authentication | Send OTP And Verify phone number
+
+
+yarn add react-otp-input  
+yarn add react-phone-input-2

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'; 
-import { signup } from '../features/auth/authActions';
+import { signup } from '../../features';
 
 const Signup: React.FC = () => {
   const dispatch:any = useDispatch();
